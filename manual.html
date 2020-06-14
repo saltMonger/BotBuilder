@@ -1,0 +1,253 @@
+<h1><strong>BotBuilder</strong></h1>
+<p>Welcome to BotBuilder!&nbsp; You are a budding engineer/mayor/business mogul who has been tasked with creating a manufacturing city from the ground up.&nbsp; Your goal is to eventually produce 1000 badges, such that they may be melded into the fabled golden badge.&nbsp; This manual contains all of the information, tips, tricks, and diagrams you will need while playing this game.&nbsp;</p>
+<h2>GOAL OF GAME</h2>
+<p>Produce 1000 badges!&nbsp; This is affected by strategically crafting a city to manufacture the main resources consumed while producing badges.&nbsp; For more on production, see the Production section of the manual.</p>
+<p>When 1000 badges are reached, the player is awarded with a special prize.&nbsp; The game may be played infinitely after this point with no intrusion from menus/other mechanisms.</p>
+<h2><br />MOVEMENT</h2>
+<p>Movement is important in a simulation game.&nbsp; All movement is conducted using the keyboard and modifier keys.</p>
+<p>WASD/Arrow Keys move the cursor. Holding Left or Right Shift and a movement key will move the cursor quickly - this is good for traversing large sections of the map.</p>
+<h2><br />READOUT WINDOW</h2>
+<p>The readout window is at the bottom of the screen and shows necessary information in the game. The readout displays information in 3 columns.</p>
+<table style="height: 113px; width: 718px;">
+<tbody>
+<tr>
+<td style="width: 78px;">Column 1</td>
+<td style="width: 624px;">Tile type name, current boons, current ore / production / trade, current metal / production / trade</td>
+</tr>
+<tr>
+<td style="width: 78px;">Column 2</td>
+<td style="width: 624px;">Power consumption / production, current badges / production / trade</td>
+</tr>
+<tr>
+<td style="width: 78px;">Column 3</td>
+<td style="width: 624px;">Name of currently targeted building</td>
+</tr>
+</tbody>
+</table>
+<h2><br />GAME MODES</h2>
+<p>BotBuilder is played by utilizing a number of different game modes to manipulate the map, buildings, and markets.&nbsp; They can be toggled by using the following keys:</p>
+<table>
+<tbody>
+<tr>
+<td>C, Escape, Tab</td>
+<td>Cursor Mode</td>
+</tr>
+<tr>
+<td>B</td>
+<td>Build Mode</td>
+</tr>
+<tr>
+<td>T</td>
+<td>Destroy Mode</td>
+</tr>
+<tr>
+<td>M, Tab</td>
+<td>Manage Mode</td>
+</tr>
+</tbody>
+</table>
+<h3><br />CURSOR MODE</h3>
+<p>Cursor mode is the main mode of the game.&nbsp; You may upgrade a building by targeting it with the cursor and double pressing SPACE or Z.</p>
+<h3><br />BUILD MODE</h3>
+<p>Pressing B enters build mode.&nbsp; Pressing ESCAPE returns to cursor mode.&nbsp; Pressing the following keys will select the related building:</p>
+<table width="380">
+<tbody>
+<tr>
+<td>1</td>
+<td>Ore Extractor (100b)</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Refinery (1000b)</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Badgery (3000b)</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Power Station (300b)</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Market (300b)</td>
+</tr>
+</tbody>
+</table>
+<p><br />Pressing SPACE will build the selected building where the grey icon show.</p>
+<h3><br />DESTROY MODE</h3>
+<p>Destroy mode allows you to remove unwanted buildings from the map.You may remove a building by targeting it with the cursor and double pressing SPACE or Z.<br />Buildings being destroyed will refund 50% of their current worth.&nbsp; If a building is upgraded, it will only refund 50% of the last paid upgrade fee.</p>
+<h3><br />MANAGE MODE</h3>
+<p>Manage mode shows the current trade and trade capacity of ORE, METAL, and BADGES.&nbsp; The current trade of these resources represents the amount of that resource which is sold every tick for boons.&nbsp; When in Manage Mode, the readout display changes to reflect trade information.</p>
+<p>Readout 0 / 0&nbsp;</p>
+<p>The left number indicates currently traded goods while right number indicates the maximum trade capacity.</p>
+<p>The maximum trade capacity is increased by upgrading or building more markets</p>
+<p>Trading per tick can be configured by using the following keys while in manage mode:</p>
+<table>
+<tbody>
+<tr>
+<td>U</td>
+<td>Zero out ore trade</td>
+</tr>
+<tr>
+<td>I</td>
+<td>Decrease ore trade by 10</td>
+</tr>
+<tr>
+<td>O</td>
+<td>Increase ore trade by 10</td>
+</tr>
+<tr>
+<td>P</td>
+<td>Max out ore trade</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<table>
+<tbody>
+<tr>
+<td>J</td>
+<td>Zero out metal trade</td>
+</tr>
+<tr>
+<td>K</td>
+<td>Decrease metal trade by 5</td>
+</tr>
+<tr>
+<td>L</td>
+<td>Increase metal trade by 5</td>
+</tr>
+<tr>
+<td>;</td>
+<td>Max out meatl trade</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<table>
+<tbody>
+<tr>
+<td>M</td>
+<td>Zero out badge trade</td>
+</tr>
+<tr>
+<td>,</td>
+<td>Decrease badge trade by 1</td>
+</tr>
+<tr>
+<td>.</td>
+<td>Increase badge trade by 1</td>
+</tr>
+<tr>
+<td>/</td>
+<td>Max out badge trade</td>
+</tr>
+</tbody>
+</table>
+<h2>&nbsp;<br />PRODUCTION</h2>
+<p>5 types of resources are used in this game: ORE, METAL, BADGES, POWER, BOONS<br />Boons are used to purchase and upgrade buildings.&nbsp; Boons are generated by selling ORE, METAL, and BADGES via a Market.<br />Ore is produced by an Ore Extractor<br />Metal is produced by a Refinery, which consumes Ore.<br />Badges are produced by a Badgery, which consumes Metal.<br />Power is produced by a Power Station.&nbsp; All buildings must be powered to produce resources, however, markets will continue to sell goods even if they are unpowered.</p>
+<p>The production of buildings is calculated as followed:</p>
+<p><strong>efficiencyMultiplier * buildingRank * baseProduction</strong></p>
+<p>Where baseProduction is the basic production amount that each building makes at 100% efficiency (see appendix for production tables), buildingRank is the Upgrade level of the building (see the Upgrade section), and efficiencyMultiplier is the efficiency of the building based on the tile it is built on (see the Tiles section).</p>
+<p>The consumption of buildings is calculated as followed:</p>
+<p><strong>consumptionEfficiency * buildingRank * baseConsumption</strong></p>
+<p>Where baseConsumption is the basic consumption amount that each building requires at 100% efficiecny (see appendix for production tables).&nbsp; consumptionEfficiency is derived from efficiencyMultiplier as follows:</p>
+<p>if efficiencyMultiplier &gt;= 100%</p>
+<p><strong>consumptionEfficiency&nbsp; = 1 / efficiencyMultiplier</strong></p>
+<p>else</p>
+<p><strong>consumptionEfficiency = 1 / (1 - (1 - efficiencyMultiplier) / 2)</strong></p>
+<h2><br />POWER</h2>
+<p>Power is required by the city to maintain production and trade.&nbsp; Power is checked every tick, and if power consumption is greater than power production, no ORE, METAL, and BADGE production or trading is conducted.&nbsp; It is imperative to maintain the power grid of your city!</p>
+<h2><br />TICK</h2>
+<p>Tick is the update step of the game.&nbsp; The tick occurrs (roughly) every 5 seconds.&nbsp; During the tick, the following occurs:</p>
+<ol>
+<li>City power is calculated</li>
+<li>If the city is powered (power consumption &lt; power production): ore, metal, and badge production is calculated and awarded</li>
+<li>Trade is calculated and boons are awarded for trade</li>
+</ol>
+<h2><br />UPGRADING</h2>
+<p>Buildings can be upgraded to increase their production.&nbsp; Note, upgrading a building increases the power draw and consumption of the facility.&nbsp; The following is the formula for upgrade cost:</p>
+<p><strong>price * ((buildingRank + 1) * 2)</strong></p>
+<p>Where price is the amount paid for the building (either build cost, or the cost of the last upgrade), and buildingRank is the rank of the building (1 = just built, 2 = first level of upgrade, etc.)</p>
+<h2><br />TILES</h2>
+<p>The map is comprised by a number of different tiles:Sea, Shallow Water, Grass ,Hills (2 different types, functionally the same), Mountains, and Desert.<br />Buildings cannot be constructed in Shallow Water or Sea tiles.<br />Buildings have an efficiency which affects their consumption and production.&nbsp; The efficienies are described in the following table:</p>
+<table width="598">
+<tbody>
+<tr>
+<td>&nbsp;</td>
+<td>SHALLOW</td>
+<td>SEA</td>
+<td>GRASS</td>
+<td>HILLS 1</td>
+<td>HILLS 2</td>
+<td>MOUNTAINS</td>
+<td>DESERT</td>
+</tr>
+<tr>
+<td>ORE</td>
+<td>X</td>
+<td>X</td>
+<td>75%</td>
+<td>100%</td>
+<td>100%</td>
+<td>150%</td>
+<td>50%</td>
+</tr>
+<tr>
+<td>REFINERY</td>
+<td>X</td>
+<td>X</td>
+<td>100%</td>
+<td>75%</td>
+<td>75%</td>
+<td>50%</td>
+<td>150%</td>
+</tr>
+<tr>
+<td>BADGERY</td>
+<td>X</td>
+<td>X</td>
+<td>50%</td>
+<td>150%</td>
+<td>150%</td>
+<td>100%</td>
+<td>75%</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<h2>APPENDIX</h2>
+<h3>Production Efficiencies</h3>
+<table style="height: 95px;" width="613">
+<tbody>
+<tr>
+<td style="width: 95px;">&nbsp;</td>
+<td style="width: 95px;">50%</td>
+<td style="width: 95px;">75%</td>
+<td style="width: 96px;">100%</td>
+<td style="width: 96px;">150%</td>
+</tr>
+<tr>
+<td style="width: 95px;">Ore Extractor</td>
+<td style="width: 95px;">5</td>
+<td style="width: 95px;">7</td>
+<td style="width: 96px;">10</td>
+<td style="width: 96px;">15</td>
+</tr>
+<tr>
+<td style="width: 95px;">Refinery</td>
+<td style="width: 95px;">2</td>
+<td style="width: 95px;">3</td>
+<td style="width: 96px;">5</td>
+<td style="width: 96px;">7</td>
+</tr>
+<tr>
+<td style="width: 95px;">Badgery</td>
+<td style="width: 95px;">1</td>
+<td style="width: 95px;">1</td>
+<td style="width: 96px;">2</td>
+<td style="width: 96px;">4</td>
+</tr>
+</tbody>
+</table>

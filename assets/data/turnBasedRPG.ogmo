@@ -1,0 +1,187 @@
+{
+  "name": "BotBWorld",
+  "ogmoVersion": "3.3.0",
+  "levelPaths": ["."],
+  "backgroundColor": "#282c34ff",
+  "gridColor": "#3c4049cc",
+  "anglesRadians": true,
+  "directoryDepth": 5,
+  "layerGridDefaultSize": {"x": 8, "y": 8},
+  "levelDefaultSize": {"x": 320, "y": 240},
+  "levelMinSize": {"x": 128, "y": 128},
+  "levelMaxSize": {"x": 4096, "y": 4096},
+  "levelValues": [],
+  "defaultExportMode": ".json",
+  "compactExport": false,
+  "externalScript": "",
+  "playCommand": "",
+  "entityTags": [],
+  "layers": [
+    {
+      "definition": "tile",
+      "name": "walls",
+      "gridSize": {"x": 16, "y": 16},
+      "exportID": "56938932",
+      "exportMode": 0,
+      "arrayMode": 0,
+      "defaultTileset": "New Tileset"
+    },
+    {
+      "definition": "entity",
+      "name": "entities",
+      "gridSize": {"x": 8, "y": 8},
+      "exportID": "56948725",
+      "requiredTags": [],
+      "excludedTags": []
+    }
+  ],
+  "entities": [
+    {
+      "exportID": "56944964",
+      "name": "player",
+      "limit": -1,
+      "size": {"x": 16, "y": 16},
+      "origin": {"x": 0, "y": 0},
+      "originAnchored": true,
+      "shape": {
+        "label": "Rectangle",
+        "points": [
+          {"x": -1, "y": -1},
+          {"x": 1, "y": -1},
+          {"x": -1, "y": 1},
+          {"x": 1, "y": -1},
+          {"x": -1, "y": 1},
+          {"x": 1, "y": 1}
+        ]
+      },
+      "color": "#ff0000ff",
+      "tileX": false,
+      "tileY": false,
+      "tileSize": {"x": 16, "y": 16},
+      "resizeableX": false,
+      "resizeableY": false,
+      "rotatable": false,
+      "rotationDegrees": 360,
+      "canFlipX": false,
+      "canFlipY": false,
+      "canSetColor": false,
+      "hasNodes": false,
+      "nodeLimit": 0,
+      "nodeDisplay": 0,
+      "nodeGhost": true,
+      "tags": [],
+      "values": []
+    },
+    {
+      "exportID": "57211165",
+      "name": "star point",
+      "limit": -1,
+      "size": {"x": 16, "y": 16},
+      "origin": {"x": 0, "y": 0},
+      "originAnchored": true,
+      "shape": {
+        "label": "Rectangle",
+        "points": [
+          {"x": -1, "y": -1},
+          {"x": 1, "y": -1},
+          {"x": -1, "y": 1},
+          {"x": 1, "y": -1},
+          {"x": -1, "y": 1},
+          {"x": 1, "y": 1}
+        ]
+      },
+      "color": "#ffe800ff",
+      "tileX": false,
+      "tileY": false,
+      "tileSize": {"x": 16, "y": 16},
+      "resizeableX": false,
+      "resizeableY": false,
+      "rotatable": false,
+      "rotationDegrees": 360,
+      "canFlipX": false,
+      "canFlipY": false,
+      "canSetColor": false,
+      "hasNodes": false,
+      "nodeLimit": 0,
+      "nodeDisplay": 0,
+      "nodeGhost": true,
+      "tags": [],
+      "values": []
+    },
+    {
+      "exportID": "57385155",
+      "name": "enemy",
+      "limit": -1,
+      "size": {"x": 16, "y": 16},
+      "origin": {"x": 0, "y": 0},
+      "originAnchored": true,
+      "shape": {
+        "label": "Rectangle",
+        "points": [
+          {"x": -1, "y": -1},
+          {"x": 1, "y": -1},
+          {"x": -1, "y": 1},
+          {"x": 1, "y": -1},
+          {"x": -1, "y": 1},
+          {"x": 1, "y": 1}
+        ]
+      },
+      "color": "#2dff00ff",
+      "tileX": false,
+      "tileY": false,
+      "tileSize": {"x": 16, "y": 16},
+      "resizeableX": false,
+      "resizeableY": false,
+      "rotatable": false,
+      "rotationDegrees": 360,
+      "canFlipX": false,
+      "canFlipY": false,
+      "canSetColor": false,
+      "hasNodes": false,
+      "nodeLimit": 0,
+      "nodeDisplay": 0,
+      "nodeGhost": true,
+      "tags": [],
+      "values": []
+    },
+    {
+      "exportID": "57386891",
+      "name": "boss",
+      "limit": -1,
+      "size": {"x": 16, "y": 16},
+      "origin": {"x": 0, "y": 0},
+      "originAnchored": true,
+      "shape": {
+        "label": "Rectangle",
+        "points": [
+          {"x": -1, "y": -1},
+          {"x": 1, "y": -1},
+          {"x": -1, "y": 1},
+          {"x": 1, "y": -1},
+          {"x": -1, "y": 1},
+          {"x": 1, "y": 1}
+        ]
+      },
+      "color": "#00ffe3ff",
+      "tileX": false,
+      "tileY": false,
+      "tileSize": {"x": 16, "y": 16},
+      "resizeableX": false,
+      "resizeableY": false,
+      "rotatable": false,
+      "rotationDegrees": 360,
+      "canFlipX": false,
+      "canFlipY": false,
+      "canSetColor": false,
+      "hasNodes": false,
+      "nodeLimit": 0,
+      "nodeDisplay": 0,
+      "nodeGhost": true,
+      "tags": [],
+      "values": []
+    }
+  ],
+  "tilesets": [
+    {"label": "tiles", "path": "../images/tileatlas.png", "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAAAQCAYAAADeWHeIAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAGvmlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS42LWMxNDggNzkuMTY0MDM2LCAyMDE5LzA4LzEzLTAxOjA2OjU3ICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIgeG1sbnM6cGhvdG9zaG9wPSJodHRwOi8vbnMuYWRvYmUuY29tL3Bob3Rvc2hvcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RFdnQ9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZUV2ZW50IyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgMjEuMCAoV2luZG93cykiIHhtcDpDcmVhdGVEYXRlPSIyMDIwLTA2LTEyVDEzOjAzOjE0LTA0OjAwIiB4bXA6TW9kaWZ5RGF0ZT0iMjAyMC0wNi0xMlQxODozMzowMS0wNDowMCIgeG1wOk1ldGFkYXRhRGF0ZT0iMjAyMC0wNi0xMlQxODozMzowMS0wNDowMCIgZGM6Zm9ybWF0PSJpbWFnZS9wbmciIHBob3Rvc2hvcDpDb2xvck1vZGU9IjMiIHBob3Rvc2hvcDpJQ0NQcm9maWxlPSJzUkdCIElFQzYxOTY2LTIuMSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDplZWNkZjE4OS0zOTRiLWU5NDItYjRlZS04Njk5ZGJlODA3Y2MiIHhtcE1NOkRvY3VtZW50SUQ9ImFkb2JlOmRvY2lkOnBob3Rvc2hvcDplMTU5OTEzNy0wYTRkLTk3NDUtYmE0Zi1hZDk2OTBkZmI1OGIiIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo3NWJhZjA2NC1jZWI2LWNhNGYtYjk2Yi02MmQxNWVmYzllNzkiPiA8eG1wTU06SGlzdG9yeT4gPHJkZjpTZXE+IDxyZGY6bGkgc3RFdnQ6YWN0aW9uPSJjcmVhdGVkIiBzdEV2dDppbnN0YW5jZUlEPSJ4bXAuaWlkOjc1YmFmMDY0LWNlYjYtY2E0Zi1iOTZiLTYyZDE1ZWZjOWU3OSIgc3RFdnQ6d2hlbj0iMjAyMC0wNi0xMlQxMzowMzoxNC0wNDowMCIgc3RFdnQ6c29mdHdhcmVBZ2VudD0iQWRvYmUgUGhvdG9zaG9wIDIxLjAgKFdpbmRvd3MpIi8+IDxyZGY6bGkgc3RFdnQ6YWN0aW9uPSJzYXZlZCIgc3RFdnQ6aW5zdGFuY2VJRD0ieG1wLmlpZDo2OGM4NGI2YS1mNjk3LWQ0NDAtOGQ1MS03ZDljNjcxNGU1N2YiIHN0RXZ0OndoZW49IjIwMjAtMDYtMTJUMTY6NTk6MzQtMDQ6MDAiIHN0RXZ0OnNvZnR3YXJlQWdlbnQ9IkFkb2JlIFBob3Rvc2hvcCAyMS4wIChXaW5kb3dzKSIgc3RFdnQ6Y2hhbmdlZD0iLyIvPiA8cmRmOmxpIHN0RXZ0OmFjdGlvbj0ic2F2ZWQiIHN0RXZ0Omluc3RhbmNlSUQ9InhtcC5paWQ6ZWVjZGYxODktMzk0Yi1lOTQyLWI0ZWUtODY5OWRiZTgwN2NjIiBzdEV2dDp3aGVuPSIyMDIwLTA2LTEyVDE4OjMzOjAxLTA0OjAwIiBzdEV2dDpzb2Z0d2FyZUFnZW50PSJBZG9iZSBQaG90b3Nob3AgMjEuMCAoV2luZG93cykiIHN0RXZ0OmNoYW5nZWQ9Ii8iLz4gPC9yZGY6U2VxPiA8L3htcE1NOkhpc3Rvcnk+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+8O7s4gAABeVJREFU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", "tileWidth": 16, "tileHeight": 16, "tileSeparationX": 0, "tileSeparationY": 0}
+  ]
+}
